@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfAppEditeur.WinGestionnaire"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppEditeur"
+        mc:Ignorable="d"
+        Title="Paramètes d'accès à la Bdd" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="297*"/>
+            <ColumnDefinition Width="107*"/>
+            <ColumnDefinition Width="388*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblUser" Content="Utilisateur:" Margin="67,160,74,0" VerticalAlignment="Top" Height="37" FontWeight="Bold" FontSize="14" Background="#FFCAEAE1" RenderTransformOrigin="0.61,5.063"/>
+        <Label x:Name="lblMdp" Content="Mot de passe:" Margin="67,232,74,0" VerticalAlignment="Top" Height="37" FontWeight="Bold" FontSize="14" Background="#FFCAEAE1"/>
+        <TextBox x:Name="txtUser" Height="37" Margin="6,166,222,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Background="#FFA5C9BF" Grid.Column="2"/>
+        <TextBox x:Name="txtMdp" Height="37" Margin="6,232,222,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Background="#FFA5C9BF" Grid.Column="2"/>
+        <Button x:Name="btnEnregistrer" Content="Enregistrer" Margin="193,337,54,0" VerticalAlignment="Top" Height="35" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2" Click="btnLogin_Click"/>
+        <Button x:Name="btnAnnuler"  Content="Annuler" Margin="73,337,166,0" VerticalAlignment="Top" Height="35" Grid.Column="2" FontSize="14" FontWeight="Bold" Click="btnAnnuler_Click" />
+
+    </Grid>
+</Window>
+

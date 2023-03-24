@@ -1,0 +1,8 @@
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\bin\Debug\DllBddRationnel.dll.config
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\bin\Debug\DllBddRationnel.dll
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\bin\Debug\DllBddRationnel.pdb
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\obj\Debug\DllBddRationnel.csproj.CoreCompileInputs.cache
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\obj\Debug\DllBddRationnel.csproj.CopyComplete
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\obj\Debug\DllBddRationnel.dll
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\obj\Debug\DllBddRationnel.pdb
+D:\BUT\BUT_Semestre4\SolutionBddEditeur\DllBddRationnel\obj\Debug\DllBddRationnel.csproj.AssemblyReference.cache
