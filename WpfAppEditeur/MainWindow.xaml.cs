@@ -90,11 +90,13 @@ namespace WpfAppEditeur
                         }
                         btnAddBook.IsEnabled=true;
                         deselect.IsEnabled=true;
+                        btnAddAuthor.IsEnabled=false;
                     }
                     else
                     {
                         btnAddBook.IsEnabled = false;
                         deselect.IsEnabled = false;
+                        btnAddAuthor.IsEnabled= true;
 
                     }
                 }
@@ -121,7 +123,7 @@ namespace WpfAppEditeur
             }
         }
 
-        private void MenuGestionnare_Click(object sender, RoutedEventArgs e)
+        private void MenuGestionnaire_Click(object sender, RoutedEventArgs e)
         {
             WinGestionnaire gest = new WinGestionnaire(this);
             gest.txtUser.Text = Properties.Settings.Default.Utilisateur;
@@ -138,6 +140,9 @@ namespace WpfAppEditeur
         {
             addUser.Visibility = Visibility.Visible;
             editUser.Visibility = Visibility.Visible;
+            btnAddAuthor.Visibility = Visibility.Visible;
+            del_book.Visibility = Visibility.Visible;
+            btnAddBook.Visibility = Visibility.Visible;
         }
 
         private void logout_click(object sender, RoutedEventArgs e)
@@ -167,9 +172,19 @@ namespace WpfAppEditeur
             catch { throw; }
         }
 
+        private void add_newauthor(object sender, RoutedEventArgs e)
+        {
+            NewBook book = new NewBook(this);
+            book.txtISBN.Text = null;
+            book.txtName.Text = null;
+            book.txtDate.Text = null;
+            
+        }
+
         private void delete_book(object sender, RoutedEventArgs e)
         {
             Booklist selectedItem = (Booklist)ListBooks.SelectedItem;
+            MessageBox.Show("Le livre " + selectedItem.Title + " a été supprimé !");
             ListBooks.Items.Remove(selectedItem);
             bddedit.DeleteBook(selectedItem);
         }
